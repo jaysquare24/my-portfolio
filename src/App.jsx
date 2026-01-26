@@ -1,9 +1,22 @@
-
+import{ Hero } from './components/sections/Hero.jsx';
+import{ About } from './components/sections/About.jsx';
+import{ Services } from './components/sections/Services.jsx';
+import{ Skills } from './components/sections/Skills.jsx';
+import{ Projects } from './components/sections/Projects.jsx';
+import{ Contacts } from './components/sections/Contacts.jsx';
+import { Layout } from './components/layout/Layout.jsx';
 function App() {
 
   return (
     <div>
-      <h1>Portfolio Coming Soon</h1>
+      <Layout>
+        <Hero />
+        <About />
+        <Services />
+        <Skills />
+        <Projects />
+        <Contacts />
+      </Layout>
     </div>
   )
 }
