@@ -1,16 +1,41 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
     margin: 0;
     padding: 0;
     color: #ffffff;
     background: #0E1018;
-}
-
-*{
-    margin: 0;
-    padding: 0;
+    line-height: 1.6;
 }
 
 a{
-    color: #ffffff;
+    text-decoration: none;
+    color: inherit;
     cursor: pointer;;
+}
+
+button{
+    color: inherit;
+}
+
+section{
+    padding: 3rem 4rem;
+}
+
+h2{
+  font-family: 'Michroma',sans-serif;
+  font-size: 32px;
+  line-height: 120%;
+  letter-spacing: -2px;
+}
+
+
+.container{
+    width: 897px;
+    margin: auto;
 }
