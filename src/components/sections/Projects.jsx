@@ -3,7 +3,7 @@ import { ProjectCard } from "../common/ProjectCard";
 
 export const Projects = () => {
     return (
-    <section id="projects" style={{ minHeight: "100vh", padding: "2rem" }}>
+    <section id="projects" >
       <div className="projects-container container">
         <div className="header-section">
           <h2>Selected Projects</h2>

@@ -1,8 +1,54 @@
+import { useRef, useState } from "react";
+import {
+  motion,
+  useScroll,
+  useTransform,
+  useMotionValueEvent,
+  AnimatePresence,
+} from "framer-motion";
+import { services } from "../../data/services";
+import { ServiceCard } from "../common/ServiceCard";
+
 export const Services = () => {
-    return (
-    <section id="services" style={{ minHeight: "100vh", padding: "2rem" }}>
-      <h1>Services</h1>
-      <p>Welcome to my services section!</p>
+  const sectionRef = useRef(null);
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  const { scrollYProgress } = useScroll({
+    target: sectionRef,
+    offset: ["start start", "end end"],
+  });
+
+  
+  const index = useTransform(
+    scrollYProgress,
+    [0, 1],
+    [0, services.length - 1]
+  );
+
+  
+  useMotionValueEvent(index, "change", (latest) => {
+    setActiveIndex(Math.round(latest));
+  });
+
+  return (
+    <section
+      ref={sectionRef}
+      style={{ height: `${services.length * 100}vh` }}
+      id="services"
+      className="services-section"
+    >
+      <div className="services-container container sticky-wrapper">
+        <p className="services-title"><span>Services</span></p>
+        <p className="services-description">What I do</p>
+        <div className="">
+          <AnimatePresence mode="wait">
+            <motion.div key={activeIndex}>
+              <ServiceCard {...services[activeIndex]} />
+            </motion.div>
+          </AnimatePresence>
+        </div>
+      </div>
     </section>
   );
-}
+};
+

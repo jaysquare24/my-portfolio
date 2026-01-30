@@ -1,8 +1,15 @@
 export const Contacts = () => {
     return (
-    <section id="contacts" style={{ minHeight: "100vh", padding: "2rem" }}>
-      <h1>Contact Me</h1>
-      <p>Welcome to my contact section!</p>
+    <section id="contacts">
+      <div className="contacts-container container">
+        <h2>Contact Me</h2>
+        <p className="contact-text">Have an idea or project in mind? Let’s make it real.</p>
+
+        <div className="button-container">
+          <button className=" btn"><span>Make a call</span></button>
+          <button className=" btn"><span>Send a mail</span></button>
+       </div>
+      </div>
     </section>
   );
 }
