@@ -41,8 +41,53 @@ nav{
 /*Hero*/
 
 .hero-section{
+  position: relative;
+  overflow: hidden;
   padding-top: 0;
 }
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -10%;
+  width: 600px;
+  height: 800px;
+  transform: translateY(-50%);
+  background: radial-gradient(
+    circle,
+    rgba(255, 166, 0, 0.260) 0%,
+    rgba(255, 166, 0, 0.213) 30%,
+    rgba(255, 166, 0, 0.213) 30%,
+    rgba(255, 166, 0, 0) 70%
+  );
+  filter: blur(60px);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.hero-section::after {
+  content: "";
+  position: absolute;
+  top: 30%;
+  right: -5%;
+  width: 500px;
+  height: 400px;
+  transform: translateY(-50%);
+  background: radial-gradient(
+    circle,
+     rgba(190, 170, 255, 0.35) 0%,
+    rgba(190, 170, 255, 0.324) 30%,
+    rgba(190, 170, 255, 0.324) 30%,
+    rgba(190, 170, 255, 0) 70%
+  );
+  filter: blur(60px);
+  z-index: 0;
+  pointer-events: none;
+  
+}
+
+
 
 .hero-image{
     display: block;
@@ -83,24 +128,24 @@ nav{
 }
 
 .btn{
-    background-color: #907CFA;
-    padding: 16px 20px;
-    border: none;
-    cursor: pointer;
-    transform: skewX(-10deg);
-    z-index: 1;
-    width: 185px;
-    font-family: 'Geist Mono', monospace;
+  background-color: #907CFA;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  transform: skewX(-10deg);
+  z-index: 1;
+  width: 185px;
+  font-family: 'Geist Mono', monospace;
    
 }
 
 .btn:nth-child(2){
-   background-color: #3E3F46;
+  background-color: #3E3F46;
 }
 
 .btn span{
-    display: inline-block;
-    transform: skewX(10deg);
+  display: inline-block;
+  transform: skewX(10deg);
 }
 
 .btn::after {
@@ -117,14 +162,6 @@ nav{
 .btn:nth-child(2)::after{
   border-right: 1px solid #3E3F46;
   border-bottom: 1px solid #3E3F46;
-}
-
-.btn:hover {
-  transform: skewX(-10deg) translate(3px, 3px);
-}
-
-.btn:hover::after {
-  transform: translate(3px, 3px);
 }
 
 /*About*/
@@ -191,8 +228,57 @@ nav{
 }
 
 /*Skills*/
+
+.skills-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.skills-bg {
+ position: absolute;
+  inset: 0; 
+  display: flex;
+  align-items: center;   
+  justify-content: flex-start; 
+  overflow: hidden;
+  z-index: 0;
+  pointer-events: none;
+  margin-top: 20px;
+  
+}
+
+.skills-track {
+  display: flex;
+  width: max-content;
+  animation: scroll 40s linear infinite;
+  will-change: transform;
+  
+
+
+}
+
+.skill-icon {
+  flex-shrink: 0;
+  width: 80px;
+  margin-right: 4rem;
+}
+
+
+
+@keyframes scroll {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+
+
 .skills-cards{
   position: relative;
+  z-index: 1;
   display: flex;
   justify-content:space-between;
   margin-top: 30px;
@@ -309,8 +395,15 @@ li span{
   position: relative;
   height: 318px;
   padding: 5px 10px; 
+  
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 
 }
+
+
 
 .project-card-bg{
   position: absolute;
@@ -349,17 +442,61 @@ li span{
   line-height: 120%;
   letter-spacing: 0px;
   font-weight: 400;
+  transition: color 0.3s ease;
   
 }
+
+
+
+
 
 /*Services*/
 
 .services-section {
   position: relative;
-
-  padding-bottom: 0;
+  padding: 3rem 0 0 0 ;
+ 
   
 }
+
+#services-container{
+  width: 100%;
+}
+
+.services-bg{
+  position:absolute;
+  inset: 0; 
+  overflow: hidden;
+  z-index: 0;
+  top: 55%
+}
+.service-track{
+  display: flex;
+  width: max-content;
+  animation: scroll 40s linear infinite;
+  will-change: transform;
+  gap: 30px;
+}
+
+.service-bg-item-container{
+  display: flex;
+  width: max-content;
+  align-items: center;
+}
+
+.service-bg-text{
+  font-family: 'Michroma',sans-serif;
+  font-size: 32px;
+  line-height: 120%;
+  letter-spacing: -2px;
+}
+
+.service-bg-icon{
+  margin-left: 20px;
+  width: 49px;
+  height: 61px;
+}
+
 
 .sticky-wrapper {
   position: sticky;
@@ -367,16 +504,11 @@ li span{
   height: 100vh;
   padding-top: 40px;
   
-  
-  
-  
-  
-  
-  
+}
 
-  
-
-  
+.services-header{
+  width: 897px;
+  margin: auto;
 }
 
 .services-title {
@@ -426,7 +558,7 @@ li span{
   justify-self: center;
   width: min(500px, 90%);
   padding: 1rem;
-  background: #2B29423D;
+  background: #2b2942ad;
   color: #fff;
   border: 1px solid #3E3F46;
   margin-top: 70px;
@@ -497,17 +629,53 @@ li span{
 }
 
 /*Footer*/
+
+body{
+  position: relative;
+  
+  z-index: 1;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  bottom: 1%; 
+  left: 50%;
+  transform: translateX(-50%);
+  width: 600px;
+  height: 310px;
+   border-radius: 300px 300px 0 0px;
+  background:
+    
+    radial-gradient(
+      circle,
+      rgba(255,255,255,0.4) 0%,
+      rgba(255,255,255,0.25) 35%,
+      rgba(255,255,255,0.1) 55%,
+      transparent 70%
+    ),
+    
+    linear-gradient(
+      90deg,
+      rgba(255, 166, 0, 0.374) 0%,
+      rgba(255, 166, 0, 0.272) 48%,
+      rgba(190, 170, 255, 0.301) 52%,
+      rgba(190, 170, 255, 0.249) 100%
+    );
+     filter: blur(60px);
+  pointer-events: none;
+}
+
 .footer-container{
   padding: 2rem 4rem;
 }
+
 .item1{
   display: flex;
   justify-content:space-between ;
   font-family:  'Geist Mono', monospace;
   gap: 21px;
   align-items:center;
- 
-
 }
 
 .item1 p{
@@ -521,7 +689,6 @@ li span{
 }
 
 .item1 p:last-child{
-  
   text-align: end;
 }
 
@@ -529,9 +696,6 @@ li span{
   display: flex;
   justify-content: space-between;
   gap: 15px;
-
-  
-  
 }
 
 .socials a{
@@ -556,20 +720,10 @@ li span{
   border-right: 1px solid #3E3F46;
   z-index: -1;
   
-
-}
-
-.socials a:hover {
-  transform: skewX(-10deg) translate(2px, 2px);
-}
-
-.socials a:hover::after {
-  transform: translate(2px, 2px);
 }
 
 .socials img{
   transform: skewX(10deg)
-
 }
 
 .item2{
@@ -596,5 +750,39 @@ li span{
   color: transparent;
  
 
+}
+
+
+/*Hover*/
+@media (hover: hover) {
+
+  .btn:hover {
+    transform: skewX(-10deg) translate(3px, 3px);
+  }
+
+  .btn:hover::after {
+    transform: translate(3px, 3px);
+  }
+
+
+  .project-card:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(255, 0, 0, 0.25);
+    transform: translateY(-6px) scale(1.02);
+  }
+
+  .project-title:hover {
+    color: #00dfc4; 
+  }
+
+  .socials a:hover {
+    transform: skewX(-10deg) translate(2px, 2px);
+  }
+
+  .socials a:hover::after {
+    transform: translate(2px, 2px);
+  }
+
+  
 }
 

@@ -1,6 +1,24 @@
+import { skillIcons } from "../../data/skillIcons";
+
+const duplicateIcons = [...skillIcons, ...skillIcons, ...skillIcons];
+
 export const Skills = () => {
     return (
     <section id="skills" className="skills-section">
+     <div className="skills-bg">
+        <div className="skills-track">
+          {duplicateIcons.map((icon, index) => (
+            <img
+              key={index}
+              src={icon}
+              alt=""
+              className="skill-icon"
+            />
+          ))}
+        </div>
+     </div>
+
+
       <div className="skills-container container">
         <h2 className="section-title">Skills</h2>
         <div className="skills-cards">
