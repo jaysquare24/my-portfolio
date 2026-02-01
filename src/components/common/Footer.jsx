@@ -5,13 +5,13 @@ export const Footer = () => {
                 <div className="item1">
                    <p>Designed by: Odebiyi Ridwan</p>
                    <div className="socials">
-                        <a href="https://twitter.com/odebiyiridwan" target="_blank" rel="noopener noreferrer">
+                        <a href="https://x.com/leojaysquare?s=21&t=WLpQzOcBaptK1TCRdxXbBg" target="_blank" rel="noopener noreferrer">
                           <img src="/resources/x.svg" alt="Twitter" />
                         </a>
-                        <a href="https://github.com/odebiyiridwan" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/jaysquare24" target="_blank" rel="noopener noreferrer">
                           <img src="/resources/instagram.svg" alt="GitHub" />
                         </a>
-                        <a href="https://linkedin.com/in/odebiyiridwan" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.linkedin.com/in/jamiu-olajide-795444185" target="_blank" rel="noopener noreferrer">
                           <img src="/resources/linkedin.svg" alt="LinkedIn" />
                         </a>
                   </div>

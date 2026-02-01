@@ -1,5 +1,6 @@
 import { projects } from "../../data/projects";
 import { ProjectCard } from "../common/ProjectCard"; 
+import { Link } from "react-router-dom";
 
 export const Projects = () => {
     return (
@@ -11,12 +12,14 @@ export const Projects = () => {
         </div>
         <div className="projects-grid">
           {projects.map(project => (
+            <Link to={`/projects/${project.slug}`}>
             <ProjectCard 
               key={project.id} 
               title={project.title} 
               imgUrl={project.imgUrl} 
               bgImageUrl={project.bgImageUrl}
             />
+            </Link>
           ))}
         </div>
       </div>
