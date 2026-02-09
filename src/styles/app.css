@@ -1,3 +1,6 @@
+
+
+
 /*Haeder*/
 header{
   display: flex;
@@ -7,35 +10,40 @@ header{
   padding: 10px 4rem;
 }
 
-.name{
-    font-family: 'Michroma', sans-serif;
+.menu-icon{
+  display: none;
 }
 
-nav{
+.name{
+  font-family: 'Michroma', sans-serif;
+}
+
+.header-links-container{
   display: flex;
-  justify-content: space-between;
+  gap: 1rem;
+  list-style: none;
   font-family: 'Geist Mono', monospace;
 }
 
 .openToWork-tag{
-    display: inline-flex;
-    width: 169px;
-    border: 2px solid #ffffff10;
-    background-color: #27AE6012;
-    text-align: center;
-    border-radius: 28px;
-    height: 41px;
-    justify-content: center;
-    align-items: center;
+  display: inline-flex;
+  width: 169px;
+  border: 2px solid #ffffff10;
+  background-color: #27AE6012;
+  text-align: center;
+  border-radius: 28px;
+  height: 41px;
+  justify-content: center;
+  align-items: center;
     
 }
 
 .openToWork-tag span{
-    background-color: #27AE60;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    margin-right: 10px;
+  background-color: #27AE60;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 10px;
 }
 
 /*Hero*/
@@ -90,33 +98,33 @@ nav{
 
 
 .hero-image{
-    display: block;
-    margin: auto;
-    width: 401px;
-    height: 468.34px;
+  display: block;
+  margin: auto;
+  width: 401px;
+  height: 468.34px;
 }
 
 .hero-section h2{
-    margin: auto;
-    font-family: 'Michroma', sans-serif;
-    width: 673px;
-    font-size: 42px;
-    line-height: 120%;
-    letter-spacing: -2px;
-    margin-top: -40px;
-    text-align: center;
+  margin: auto;
+  font-family: 'Michroma', sans-serif;
+  width: 673px;
+  font-size: 42px;
+  line-height: 120%;
+  letter-spacing: -2px;
+  margin-top: -40px;
+  text-align: center;
 }
 
 .hero-section p{
-    margin: auto;
-    width: 673px;
-    font-size: 16px;
-    font-family: 'Geist Mono', monospace;
-    line-height: 20px;
-    letter-spacing: -0.2px;
-    opacity: 70%;
-    margin-top: 20px;
-    text-align: center;
+  margin: auto;
+  width: 673px;
+  font-size: 16px;
+  font-family: 'Geist Mono', monospace;
+  line-height: 20px;
+  letter-spacing: -0.2px;
+  opacity: 70%;
+  margin-top: 20px;
+  text-align: center;
 }
 
 .button-container{
@@ -153,41 +161,57 @@ nav{
   position: absolute;
   inset: 0;
   background: transparent;
-  border-right: 1px solid #907CFA;
-  border-bottom: 1px solid #907CFA;
+  border: 1px solid #907CFA;
   transform: translate(6px, 6px);
   z-index: -1;
 }
 
 .btn:nth-child(2)::after{
-  border-right: 1px solid #3E3F46;
-  border-bottom: 1px solid #3E3F46;
+  border: 1px solid #3E3F46;
 }
 
 /*About*/
 
-.about-container{
+
+.about-content-container{
   position: relative;
   display: flex;
-  width: 897px;
   margin: auto;
   gap: 32px;
-
+  align-items: center;
 }
 
+.about-content{
+  width: 532px;
+}
+
+.about-me h2{
+  margin-bottom: 40px;
+}
+
+
 .about-me p{
-  font-family: 'Geist Mono',sans-serif;
+ font-family: 'Geist Mono', monospace;
   font-size: 16px;
   line-height: 20px;
   letter-spacing: -0.2px;
-  width: 532px;
-  margin:40px 0;
-
+  opacity: 70%;
+  margin-bottom: 10px;
 }
 
-.about-container .button-container{
+
+
+.about-container .button-container {
  margin: 0;
+ margin-top: 40px;
+
 }
+
+.button-container a{
+  text-align: center;
+  padding: 12px 20px;
+}
+
 
 .about-image-container{
   position: relative;
@@ -196,8 +220,7 @@ nav{
   background-color: #37334a;
   transform: skewX(-10deg);
   z-index: 1;
-  
- 
+
 }
 
 .about-image-container::after{
@@ -252,9 +275,6 @@ nav{
   width: max-content;
   animation: scroll 40s linear infinite;
   will-change: transform;
-  
-
-
 }
 
 .skill-icon {
@@ -297,7 +317,7 @@ nav{
   width: 485px;
   border: 1px solid #FFFFFF40;
   padding: 15px;
-  background-color: #2b2942ad;
+  background-color: #2b2942e2;
   transform: skewX(-10deg);
 }
 
@@ -316,9 +336,9 @@ nav{
  
 }
 
-.skill-card-header::after{
-  content: '';
+.skill-card-header::before{
   position: absolute;
+  content: '';
   inset: 0;
   background: transparent;
   transform: translate(6px, 6px);
@@ -338,12 +358,14 @@ nav{
 }
 
 .skills-card li{
+  display: flex;
   font-family: 'Geist Mono', monospace;
   font-size: 16px;
   line-height: 160%;
   letter-spacing: 0px;
+  align-items: center;
   list-style: none;
-  opacity: 70%;
+  opacity: 90%;
  
 }
 
@@ -362,19 +384,24 @@ li span{
 
 /*Projects*/
 
+#projects{
+  overflow: hidden;
+}
+
 .header-section{
   display: flex;
   justify-content: space-between;
 }
 
-.header-section h2{
-  text-shadow: 0px 3px 0 #3E3F46;
- 
+.projects-title {
+  width: max-content;
 }
 
+
+
 .header-section p{
-  width: 432px;
-  font-family: 'Geist Mono',sans-serif;
+  width: 50%;
+  font-family: 'Geist Mono', monospace;
   font-size: 14px;
   line-height: 20px;
   letter-spacing: -0.2px;
@@ -393,9 +420,9 @@ li span{
 
 .project-image-container{
   position: relative;
-  min-height: 318px;
-  padding: 5px 10px; 
+  padding: 10px 10px; 
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
 
 }
 
@@ -408,7 +435,20 @@ li span{
   top: 0;
   left: 0;
   z-index: -2;
+  animation: spin 20s linear infinite;
+  transform-origin: center;
+  will-change: transform;
   
+}
+
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .overlay{
@@ -423,12 +463,12 @@ li span{
   width: 100%;
   height: 161px;
   margin: auto;
-  margin-top: 50px;
+  margin-top: 45px;
 }
 
 .project-title{
   width: 100%;
-  margin-top: 50px;
+  margin-top: 45px;
   text-align: center;
   border: 1px solid #FFFFFF3D;
   background-color: #FFFFFF3D;
@@ -451,8 +491,6 @@ li span{
 .services-section {
   position: relative;
   padding: 3rem 0 0 0 ;
- 
-  
 }
 
 #services-container{
@@ -554,10 +592,11 @@ li span{
   justify-self: center;
   width: min(500px, 90%);
   padding: 1rem;
-  background: #2b2942ad;
+  background: #2b2942e2;
   color: #fff;
   border: 1px solid #3E3F46;
   margin-top: 70px;
+  
 }
 
 .service-icon{
@@ -591,11 +630,12 @@ li span{
 
 .service-card li{
   list-style: none;
-  font-size: 14px;
-  font-family: 'Geist Mono', sans-serif;
+  font-size: 16px;
+  font-family: 'Geist Mono', monospace;
   letter-spacing: 0px;
   display: inline-flex;
   align-items: first baseline;
+ 
 }
 
 .service-card-title{
@@ -613,6 +653,10 @@ li span{
 
 /*contact*/
 
+#contacts{
+  padding-top: 0;
+}
+
 .contact-text{
   width: 666px;
   font-family: 'Michroma',sans-serif;
@@ -621,14 +665,16 @@ li span{
   line-height: 120%;
   letter-spacing: -2px;
   margin: auto;
-  margin-top: 50px;
+  text-align: center;
 }
+
+
+
 
 /*Footer*/
 
 body{
   position: relative;
-  
   z-index: 1;
 }
 
@@ -737,14 +783,13 @@ body::before {
 }
 
 .item2 p:last-child{
-  width: 1191px;
+  width: 100%;
   font-family:  'Michroma', sans-serif;
-  font-size: 178.4px;
+  font-size: clamp(100px, 13vw, 165px);
   line-height: 223px;
   letter-spacing: -2.23px;
   -webkit-text-stroke: 2px #5b5c65;
   color: transparent;
- 
 
 }
 
@@ -757,8 +802,11 @@ body::before {
   align-items: center;
 }
 
+
 .project-details-container .project-image-container{
   flex-basis: 40%;
+  display: flex;
+  flex-direction: column;
 
 }
 
@@ -770,6 +818,10 @@ body::before {
 
 }
 
+.project-details-container .project-image-container .project-title{
+  order: -1;
+}
+
 .project-details-container .project-title{
   margin: 20px auto;
 }
@@ -778,20 +830,20 @@ body::before {
 
 .project-details-content{
   flex-basis: 55%;
-  
+  order: -1;
 }
 
 .project-description{
   font-family:  'Geist Mono', monospace;
   font-size: 16px;
-  line-height: 120%;
-  letter-spacing: 0px;
+  line-height: 22px;
+  letter-spacing: -0.2px;
   color: #ffffff;
   opacity: 70%;
 }
 
 
-.project-details-content h5{
+.project-details-content h3{
   font-family: 'Michroma',sans-serif;
   margin: 20px auto 10px;
 }
@@ -833,12 +885,9 @@ body::before {
 
 .project-links{
   margin-top: 50px;
-  justify-content: center;
+  justify-content:start;
   gap: 20px;
 }
-
-
-
 
 .project-links a{
   background-color: #907CFA;
@@ -878,6 +927,51 @@ body::before {
   border-bottom: 1px solid #3E3F46;
 }  
 
+.other-projects-wrapper{
+  width: 100%;
+  overflow: hidden;
+  margin-top: 60px!important;
+}
+
+.other-projects-wrapper h2{
+  text-shadow: 0px 3px 0 #3E3F46;
+}
+
+.other-project-container{
+  margin-top: 20px;
+  display: flex;
+  width: max-content;
+  gap: 15px;
+  animation: scroll 100s linear infinite;
+  will-change: transform;
+  padding: 20px 0;
+
+}
+
+.other-project-container .project-image-container{
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+.other-project-container .project-image{
+  width: 95%;
+  height: auto;
+  margin-top: 5px;
+
+
+}
+
+.other-project-container .project-image-container .project-title{
+  order: -1;
+}
+
+.other-project-container  .project-title{
+  margin: 5px auto;
+  font-size: 12px;
+}
+
  
 
 .goBack-btn{
@@ -916,6 +1010,16 @@ body::before {
     color: #00dfc4; 
   }
 
+  .other-project-container:hover {
+   animation-play-state: paused;
+  }
+
+  .other-project-container .project-image-container:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(255, 0, 0, 0.25);
+    transform: translateY(-6px) scale(1.02);
+  }
+
   .socials a:hover {
     transform: skewX(-10deg) translate(2px, 2px);
   }
@@ -934,4 +1038,340 @@ body::before {
   
 
 }
+
+@media screen and (max-width:1050px){
+
+  
+
+  .other-project-container .project-image-container{
+    width: 250px;
+  }
+
+  
+  .nav-links{
+    display: none;
+  }
+
+  .open-menu{
+    background-color: #0E1018 ;
+    display: block;
+    position: absolute;
+    top: 1%;
+    width: 100%;
+    height: 100vh;
+    
+    left: 0;
+    z-index: 4;
+    padding-top: 60px; 
+  }
+
+  .header-links-container{
+        flex-direction: column;
+        
+        
+        align-items: center;
+         
+         gap: 20px;
+  }
+
+  .open-menu li{
+
+    
+       
+    font-size: 1.3rem;
+    border-bottom: 1px solid #3E3F46;
+    width:50% ; 
+    text-align: center; 
+    padding-bottom: 10px;
+       
+        
+
+  }
+
+  
+
+  .menu-icon{
+    display: flex;
+  }
+
+  
+  .about-content{
+    width: 60%;
+  }
+
+  .about-image-container{
+    width: 35%;
+  }
+
+  .about-image{
+    width: 100%;
+  }
+  
+  
+ .services-header{
+  width: 85%;
+  margin: auto;
+  }
+
+  .item1 p{
+    font-size: 12.5px;
+  }
+  .item2 p:last-child{
+    font-size: clamp(50px, 12.3vw, 160px);
+    line-height: 223px;
+ }
+}
+
+
+
+ 
+
+
+
+
+@media screen and (max-width:830px){
+
+  
+ 
+
+  .hero-section h2{
+    width: 80%;
+    font-size: clamp(20px, 5vw, 42px);
+  }
+
+  .hero-section p{
+    width: 75%;
+    font-size: clamp(16px, 5vw, 18px);
+  }
+
+ .about-content-container{
+  flex-direction: column;
+ }
+
+ .about-image-container{
+  order: -1;
+  margin-bottom: 20px;
+  margin-top: 10px;
+ }
+
+ .about-content{
+  width: 100%;
+ }
+
+ .shape1{
+  position: absolute;
+  top :33%;
+  right:25%;
+  z-index: 2;
+}
+
+
+.skills-cards{
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  
+}
+
+
+.header-section{
+  flex-direction: column;
+}
+
+.header-section p{
+  margin-top: 30px;
+  width: 60%;
+  
+}
+
+.projects-grid{
+  grid-template-columns: repeat(2, minmax(100px, 289px));
+  justify-content: space-evenly;
+}
+
+.project-image{
+  margin-top: 20px;
+}
+
+.project-title{
+  margin-top: 20px;
+}
+
+.contact-text{
+  width: 95%;
+  font-size: clamp(20px, 5vw, 42px);
+
+
+}
+
+.contact-info-container{
+  width: 90%;
+}
+
+.contact-info{
+  
+  font-size: 18px;
+}
+
+
+#project-details .project-card{
+  flex-direction: column;
+}
+
+#project-details .project-image-container{
+  margin-bottom: 40px;
+}
+
+.other-project-container .project-image-container{
+  width: 200px;
+}
+
+.other-project-container {
+  animation-duration: 60s;
+}
+
+.other-project-container .project-title{
+  font-size: 10px;
+}
+
+
+
+.footer-container{
+  padding: 2rem 3.5rem;
+}
+.item1{
+  position: relative;
+}
+
+.socials{
+  position: absolute;
+  left: 0;
+  right: 0;
+  justify-content: center;
+ 
+}
+
+.item1 p{
+  font-size: 14px;
+  margin-top: 110px;
+}
+
+
+  .item2 p:last-child{
+  
+  font-size: clamp(20px, 11vw, 100px);
+  line-height: 123px;
+  
+ 
+
+ }
+}
+
+@media screen and (max-width:620px){
+ 
+
+  .other-project-container .project-image-container{
+  width: 150px;
+  }
+
+
+ header{
+  padding: 10px 2rem;
+}
+
+.hero-section h2{
+  letter-spacing: -1px;
+}
+
+.hero-section p{
+  font-size: 15px;
+}
+
+.hero-section .button-container, .contacts-container .button-container{
+  justify-content: center;
+}
+
+.button-container{
+  width: 100%;
+}
+
+.btn{
+  width: max-content;
+}
+
+.about-image-container{
+
+  width: 50%;
+ 
+}
+
+.shape1{
+  
+  top :28%;
+  right:15%;
+
+}
+
+.skills-card{
+  width: 100%;
+}
+
+.header-section p{
+  margin-top: 30px;
+  width: 100%;
+  
+}
+
+.project-title{
+  font-size: 12px;
+}
+
+
+
+body::before {
+
+  width: 100%;
+  height: 200px;
+
+}
+
+
+.footer-container{
+  padding: 2rem 2rem;
+ 
+}
+
+.item1{
+  flex-direction: column;
+  align-content: center;
+  
+}
+
+.item1 p{
+ text-align: center;
+ margin-top: 60px;
+ width: 100%;
+}
+
+.item1 p:last-child{
+ text-align: center;
+ margin-top: 0px;
+}
+
+
+.item2 p:last-child{
+  line-height: 100px;
+}
+
+
+}
+
+@media screen and (max-width:450px){
+
+  
+}
+
+
+
+
 

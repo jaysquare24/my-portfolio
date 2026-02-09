@@ -37,7 +37,6 @@ export const Services = () => {
       id="services"
       className="services-section"
     >
-      
 
       <div className="container sticky-wrapper" id="services-container">
 
@@ -58,10 +57,17 @@ export const Services = () => {
         </div>
      </div>
         <div className="services-header">
-        <p className="services-title"><span>Services</span></p>
-        <p className="services-description">What I do</p>
+          <p className="services-title" ><span>Services</span></p>
+          <motion.p 
+          className="services-description"
+          initial={{opacity:0, x:-40}}
+          whileInView={{x:0, opacity:1}}
+          transition={{ duration: 1.5, ease: "easeOut" }}
+          > 
+            What I do
+          </motion.p>
         </div>
-        <div className="">
+        <div>
           <AnimatePresence mode="wait">
             <motion.div key={activeIndex}>
               <ServiceCard {...services[activeIndex]} />

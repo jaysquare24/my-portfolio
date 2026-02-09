@@ -1,3 +1,5 @@
+import {motion} from "framer-motion";
+
 export const ProjectCard = ({
   title,
   imgUrl,
@@ -29,21 +31,42 @@ export const ProjectCard = ({
 
       {description && (
         <div className="project-details-content">
-          <p className="project-description">{description}</p>
+          <motion.p className="project-description"
+            initial={{opacity:0, y:40}} 
+            animate={{y:0, opacity:0.7}}
+            transition={{ duration: 1.5, ease: "easeOut" }}
+          >
+            {description}
+          </motion.p>
 
           {stack.length > 0 && (
             <>
-            <h5>Stack</h5>
-            <div className="project-stack">
+            <motion.h3 className="project-stack-title"
+              initial={{opacity:0, y:40}} 
+              animate={{y:0, opacity:1}}
+              transition={{ duration: 1.5, delay:0.5, ease: "easeOut" }}
+            >
+              Stack
+            </motion.h3>
+            <motion.div 
+              className="project-stack"
+              initial={{opacity:0, y:40}} 
+              animate={{y:0, opacity:1}}
+              transition={{ duration: 1.5, delay:1, ease: "easeOut" }}
+            >
               {stack.map((tech, index) => (
                 <p key={index} className="project-stack-item"><span>{tech}</span></p>
               ))}
-            </div>
+            </motion.div>
             </>
           )}
 
           {links.length > 0 && (
-            <div className="project-links">
+            <motion.div className="project-links"
+              initial={{opacity:0, y:40}} 
+              animate={{y:0, opacity:1}}
+              transition={{ duration: 1.5, delay:1.5, ease: "easeOut" }}
+            >
               {links.map((link, index) => (
                 
                 <a
@@ -56,7 +79,7 @@ export const ProjectCard = ({
                 </a>
               
               ))}
-            </div>
+            </motion.div>
           )}
         </div>
       )}

@@ -1,14 +1,35 @@
+import { motion } from "framer-motion";
+
 export const Contacts = () => {
-    return (
+
+  return (
     <section id="contacts">
       <div className="contacts-container container">
-        <h2>Contact Me</h2>
-        <p className="contact-text">Have an idea or project in mind? Let’s make it real.</p>
+        <motion.p 
+          className="contact-text"
+          initial={{opacity:0, y:40}}
+          whileInView={{y:0, opacity:0.9}}
+          viewport={{once:true}}
+          transition={{ duration: 1.5, delay:0.5, ease: "easeOut" }}
+        >
+          Have an idea or project in mind? Let’s make it real.
+        </motion.p>
 
-        <div className="button-container">
-          <button className=" btn"><span>Make a call</span></button>
-          <button className=" btn"><span>Send a mail</span></button>
-       </div>
+        <motion.div 
+        className="button-container"
+        initial={{opacity:0, y:40}}
+        whileInView={{y:0, opacity:1}}
+        viewport={{once:true}}
+        transition={{ duration: 1.5, delay:1, ease: "easeOut" }}
+        >
+          <button 
+          className=" btn"><span>Book a call</span></button>
+          <button className=" btn"
+          onClick={() => window.location = 'mailto:devjamiuolajide@gmail.com'}
+          ><span>Send a mail</span></button>
+       </motion.div>
+             
+       
       </div>
     </section>
   );
