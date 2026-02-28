@@ -1,8 +1,8 @@
 import { projects } from "../../data/projects";
 import { useParams } from "react-router-dom";
 import { ProjectCard } from "../common/ProjectCard";
-import { useNavigate, Link } from "react-router-dom";
-import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
+import { OtherProjects } from "../common/OtherProjects";
 
 export const ProjectDetails = () => {
     const navigate = useNavigate();
@@ -20,26 +20,7 @@ export const ProjectDetails = () => {
                 {project? <ProjectCard {...project} />:<div>Project not found</div>}
             </div>
 
-            <div className="other-projects-wrapper container">
-                <motion.h2
-                initial={{opacity:0, x:40}}
-                whileInView={{x:0, opacity:1}}
-                viewport={{once:true}}
-                transition={{ duration: 1.5, ease: "easeOut" }}
-                >Other Projects</motion.h2>
-                <div className="other-project-container">
-                   {[...projects, ...projects].map(project => (
-                        <Link to={`/projects/${project.slug}`} key={project.id}>
-                            <ProjectCard 
-                            title={project.title} 
-                            imgUrl={project.imgUrl} 
-                            bgImageUrl={project.bgImageUrl}
-                            />
-                        </Link>
-                    ))}
-                </div>
-
-            </div>  
+            <OtherProjects projects={projects.filter(p => p.slug !== slug)} />  
              
             <button className="btn goBack-btn" onClick={goBack} ><span>Go Back</span></button>
 

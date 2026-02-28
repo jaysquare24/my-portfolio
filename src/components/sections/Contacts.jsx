@@ -22,11 +22,11 @@ export const Contacts = () => {
         viewport={{once:true}}
         transition={{ duration: 1.5, delay:1, ease: "easeOut" }}
         >
-          <button 
-          className=" btn"><span>Book a call</span></button>
-          <button className=" btn"
-          onClick={() => window.location = 'mailto:devjamiuolajide@gmail.com'}
-          ><span>Send a mail</span></button>
+          <a 
+          className=" btn" href="https://cal.com/jamiu-olajide-wxlayz" target="_blank" rel="noopener noreferrer"><span>Book a call</span></a>
+          <a className=" btn"
+          href = "mailto:devjamiuolajide@gmail.com"
+          ><span>Send a mail</span></a>
        </motion.div>
              
        

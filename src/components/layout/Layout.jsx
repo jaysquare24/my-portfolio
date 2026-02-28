@@ -1,7 +1,8 @@
 import { Header } from "../common/Header";
 import { Footer } from "../common/Footer";
 import { ScrollToTop } from "../ScrollToTop";
-import { Outlet } from "react-router-dom";
+
+
 
 
 export const Layout = ({children}) => {

@@ -19,9 +19,7 @@ export const About = () => {
            viewport={{once:true}}
            transition={{ duration: 1.5, delay:0.5, ease: "easeOut" }}
           >
-            <p>I’m a front-end developer with a strong focus on creating clean, efficient, and user-centered web solutions. I combine technical precision with thoughtful design to build interfaces that are both functional and visually engaging. With a proven track record in developing top-notch solutions, I have successfully completed several projects. Check out some of my works in the projects section. Each project reflects my commitment to quality, functionality, and innovation.</p>
-            <p>Beyond coding, I enjoy exploring technical innovations, engaging with the developer community, and continuously improving through study and reading. I’m also passionate about chess, which strengthens my strategic thinking and problem-solving skills.</p>
-            <p>I’m always eager to collaborate on meaningful projects and help create digital solutions that align with clear goals and strong brand identity.</p>
+           <p>I’m a front-end developer focused on building clean, efficient, and user-centered web interfaces that balance strong functionality with thoughtful design. I have completed several high-quality projects that reflect my commitment to innovation, precision, and visual appeal. Beyond coding, I actively explore new technologies, engage with the developer community, and continuously improve through learning and reading. I’m also passionate about chess, which sharpens my strategic thinking and problem-solving skills, and I’m always eager to collaborate on meaningful projects that align with clear goals and strong brand identity.</p>
           </motion.div>
    
           <motion.div

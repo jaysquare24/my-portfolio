@@ -7,8 +7,15 @@ export const ProjectCard = ({
   description,
   stack = [],
   links = [],
+  features = [],
+  futureEnhancement = [],
+  imagesUrl = []
+  
 }) => {
+
+  const images = imagesUrl.length > 0 ? imagesUrl.filter(url => url !== imagesUrl[1] && url !== imagesUrl[2]) : []; 
   return (
+    <>
     <div className="project-card">
       
       <div className="project-image-container">
@@ -23,7 +30,9 @@ export const ProjectCard = ({
         )}
 
         {imgUrl && (
-          <img className="project-image" src={imgUrl} alt={title} />
+          <div className="project-image-wrapper">
+           <img className="project-image" src={imgUrl} alt={title} />
+          </div>
         )}
 
         <h4 className="project-title">{title}</h4>
@@ -31,6 +40,13 @@ export const ProjectCard = ({
 
       {description && (
         <div className="project-details-content">
+          <motion.h3 className="project-overview-title"
+            initial={{opacity:0, y:40}} 
+            animate={{y:0, opacity:1}}
+            transition={{ duration: 1.5, ease: "easeOut" }}
+          >
+            Overview
+          </motion.h3>
           <motion.p className="project-description"
             initial={{opacity:0, y:40}} 
             animate={{y:0, opacity:0.7}}
@@ -59,7 +75,7 @@ export const ProjectCard = ({
               ))}
             </motion.div>
             </>
-          )}
+          )}  
 
           {links.length > 0 && (
             <motion.div className="project-links"
@@ -84,5 +100,55 @@ export const ProjectCard = ({
         </div>
       )}
     </div>
+
+    {features.length > 0 && (
+      <div className="features-enhancement-wrapper container">
+        <div className="features-container">
+          <div className="features">
+            <h3 className="project-features-title feature-enhancement-header"><span>Features</span></h3>
+            <ul className="project-features">
+              {features.map((feature, index) => (
+                <li key={index} className="project-feature-item "> <span></span><p>{feature}</p></li>
+              ))}
+            </ul>
+          </div>
+          <div className="aside-image-container">
+            {imagesUrl.length > 0 && (
+              <img className="aside-image" src={imagesUrl[1]} alt={title} />
+            )}
+
+          </div>
+        </div>
+
+        <div className="enhancement-container">
+          <div className="enhancement">
+            <h3 className="project-enhancement-title feature-enhancement-header"><span>Future Enhancement</span></h3>
+            <ul className="project-enhancement">
+              {futureEnhancement.map((enhancement, index) => (
+                <li key={index} className="project-enhancement-item"><span></span><p>{enhancement}</p></li>
+              ))}
+            </ul>
+          </div>
+          <div className="aside-image-container">
+            {imagesUrl.length > 1 && (
+              <img className="aside-image" src={imagesUrl[2]} alt={title} />
+            )}
+          </div>
+        </div>
+      </div>
+    )}
+
+    {images.length > 0 && (
+      <div className="project-screenshots container">
+        <div className="project-screenshots-container">
+          {images.map((url, index) => (
+            <div key={index} className="screenshot-wrapper">
+              <img key={index} className="project-screenshot" src={url} alt={`${title} Screenshot ${index + 1}`} />
+            </div>
+          ))}
+        </div>
+      </div>
+    )}
+    </>
   );
 };

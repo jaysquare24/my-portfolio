@@ -1,6 +1,10 @@
-import { useState } from "react";   
+import { useState } from "react";  
+import { useLocation, useParams } from "react-router-dom"; 
 
 export const Header = () => {
+    const location = useLocation();
+    const { slug } = useParams();
+    const hideNav = location.pathname.startsWith("/projects/");
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     const toggleMenu = () => {
@@ -13,9 +17,9 @@ export const Header = () => {
             <nav className={`nav-links ${isMenuOpen ? "open-menu" : ""}`}>
                 <ul className="header-links-container" >
                     <li><a href="/">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li> 
-                    <li><a href="#projects">Projects</a></li>
+                    {!hideNav && (<li><a href="#about">About</a></li>)}
+                    {!hideNav && (<li><a href="#services">Services</a></li>)}
+                   {!hideNav && (<li><a href="#projects">Projects</a></li>)}
                 </ul>
             </nav>
             <img onClick={toggleMenu} className="menu-icon" src="/resources/icons8-fries-menu-48.png" alt="Menu Icon" />
