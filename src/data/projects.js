@@ -9,7 +9,7 @@ export const projects = [
      {name:'LIVE LINK', url: 'https://mediamarketing.netlify.app/'}
     ],
     imgUrl:"/resources/image-58.png",
-    bgImageUrl:"/resources/project-card-bg1.png",
+    bgImageUrl:"/resources/project-card-bg1.avif",
     features:[
       "simple and Clean Layout",
       "Clean and Compelling Hero section",
@@ -46,8 +46,8 @@ export const projects = [
       {name:'GITHUB', url: 'https://github.com/jaysquare24/E-Commerce'},
        {name:'LIVE LINK', url: 'https://jayfashion.netlify.app/'}
     ],
-    imgUrl:"/resources/e-commerce-img.svg",
-    bgImageUrl:"/resources/project-card-bg3.png",
+    imgUrl:"/resources/e-commerce-img.png",
+    bgImageUrl:"/resources/project-card-bg3.avif",
      features:[
       "Dynamic product inventory ",
       "Multi-currency support with price conversion",
@@ -64,12 +64,12 @@ export const projects = [
       "Checkout integration",
     ],
     imagesUrl:[
-      "/resources/clothing3.png",
-      "/resources/clothing1.png",
-      "/resources/clothing2.png",
-      "/resources/clothing4.png",
-      "/resources/clothing6.png",
-      "/resources/clothing5.png",
+      "/resources/clothing3.avif",
+      "/resources/clothing1.avif",
+      "/resources/clothing2.avif",
+      "/resources/clothing4.avif",
+      "/resources/clothing6.avif",
+      "/resources/clothing5.avif",
       
       
     ],
@@ -84,8 +84,8 @@ export const projects = [
       {name:'GITHUB', url: 'https://github.com/jaysquare24/workspace_app'},
        {name:'LIVE LINK', url: 'https://workpace.netlify.app/'}
     ],
-    imgUrl:"/resources/workplace-img.svg",
-    bgImageUrl:"/resources/project-card-bg2.png",
+    imgUrl:"/resources/workspace.png",
+    bgImageUrl:"/resources/project-card-bg2.avif",
     features:[
       "simple and Clean Layout",
       "Clean and Compelling Hero section",
@@ -103,12 +103,12 @@ export const projects = [
     ],
 
     imagesUrl:[
-      "/resources/workspace4.png",
-      "/resources/workspace2.png",
-      "/resources/workspace3.png",
-      "/resources/workspace1.png",
-      "/resources/workspace-5.png",
-      "/resources/workspace-6.png",
+      "/resources/workspace4.avif",
+      "/resources/workspace2.avif",
+      "/resources/workspace3.avif",
+      "/resources/workspace1.avif",
+      "/resources/workspace-5.avif",
+      "/resources/workspace-6.avif",
       
       
     ],
@@ -123,8 +123,8 @@ export const projects = [
       {name:'GITHUB', url: 'https://github.com/jaysquare24/JetPay-Landing-page'},
        {name:'LIVE LINK', url: 'https://jet-pay.netlify.app/'}
     ],
-    imgUrl:"/resources/zuka-img.svg",
-    bgImageUrl:"/resources/project-card-bg4.png",
+    imgUrl:"/resources/jetpay1.avif",
+    bgImageUrl:"/resources/project-card-bg4.avif",
     features:[
       "simple and Clean Layout",
       "Clean and Compelling Hero section",
@@ -141,10 +141,10 @@ export const projects = [
       "Improved Accessibility",
     ],
     imagesUrl:[
-      "/resources/jetpay4.png",
-      "/resources/jetpay2.png",
-      "/resources/jetpay3.png",
-      "/resources/jetpay5.png",
+      "/resources/jetpay4.avif",
+      "/resources/jetpay2.avif",
+      "/resources/jetpay3.avif",
+      "/resources/jetpay5.avif",
       
       
     ],
@@ -159,8 +159,8 @@ export const projects = [
       {name:'GITHUB', url: 'https://github.com/jaysquare24/To-do-App'},
        {name:'LIVE LINK', url: 'https://flowlytask.netlify.app/'}
     ],
-    imgUrl:"/resources/todo-dsk.png",
-    bgImageUrl:"/resources/project-card-bg5.png",
+    imgUrl:"/resources/todo-dsk.avif",
+    bgImageUrl:"/resources/project-card-bg5.avif",
     features:[
       "Motivational Quotes Slider",
       "Add New Task",
@@ -180,12 +180,12 @@ export const projects = [
       "Recurring Task(Habits/Routines)"
     ],
     imagesUrl:[
-      "/resources/todo4.png",
-      "/resources/todo1.png",
-      "/resources/todo2.png",
-      "/resources/todo3.png",
-      "/resources/todo5.png",
-      "/resources/todo6.png",
+      "/resources/todo4.avif",
+      "/resources/todo1.avif",
+      "/resources/todo2.avif",
+      "/resources/todo3.avif",
+      "/resources/todo5.avif",
+      "/resources/todo6.avif",
       
       
     ],
@@ -200,8 +200,8 @@ export const projects = [
       {name:'GITHUB', url: 'https://github.com/jaysquare24/reddit-app'},
        {name:'LIVE LINK', url: 'https://jay-redditclient.netlify.app/'}
     ],
-    imgUrl:"/resources/reddit-img.png",
-    bgImageUrl:"/resources/project-card-bg1.png",
+    imgUrl:"/resources/reddit-img.avif",
+    bgImageUrl:"/resources/project-card-bg1.avif",
     features:[
       "Browse top posts from Reddit",
       "Search for posts by keywords",
@@ -219,10 +219,10 @@ export const projects = [
     ],
 
     imagesUrl:[
-      "/resources/reddit1.png",
-      "/resources/reddit2.png",
-      "/resources/reddit4.png",
-      "/resources/reddit3.png",
+      "/resources/reddit1.avif",
+      "/resources/reddit2.avif",
+      "/resources/reddit4.avif",
+      "/resources/reddit3.avif",
      
       
       
@@ -239,8 +239,8 @@ export const projects = [
       {name:'GITHUB', url: 'https://github.com/jaysquare24/Trueminds-Innovations-ltd-Intern-Individual-Project'},
        {name:'LIVE LINK', url: 'https://chuksmeal.netlify.app/'}
     ],
-    imgUrl:"/resources/chuks-img.png",
-    bgImageUrl:"/resources/project-card-bg3.png",
+    imgUrl:"/resources/chuks-img.avif",
+    bgImageUrl:"/resources/project-card-bg3.avif",
      features:[
       "Cart global state management",
       "Responsive modern UI",
@@ -261,12 +261,12 @@ export const projects = [
       "Admin dashboard "
     ],
     imagesUrl:[
-      "/resources/chuks1.png",
-      "/resources/chuks2.png",
-      "/resources/chuks3.png",
-      "/resources/chuks4.png",
-      "/resources/chuks5.png",
-      "/resources/chuks6.png",
+      "/resources/chuks1.avif",
+      "/resources/chuks2.avif",
+      "/resources/chuks3.avif",
+      "/resources/chuks4.avif",
+      "/resources/chuks5.avif",
+      "/resources/chuks6.avif",
       
       
     ],
