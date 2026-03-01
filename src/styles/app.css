@@ -549,7 +549,7 @@ li span{
 .sticky-wrapper {
   position: sticky;
   top: 0;
-  height: 100vh;
+  height: auto;
   padding-top: 40px;
 
   
