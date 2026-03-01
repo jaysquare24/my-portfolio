@@ -29,7 +29,7 @@ export const About = () => {
            viewport={{once:true}}
            transition={{ duration: 1.5, delay:0.5, ease: "easeOut" }}
           >
-            <img className="about-image" src="/resources/about-image.png" alt="About Me" />
+            <img className="about-image" src="/resources/about-image.png" alt="About Me"  loading="lazy"/>
           </motion.div>
           <img className="decorative-shape shape1" src="/resources/style-icon1.svg" alt="Decorative Shape 1" />
         </div>

@@ -26,12 +26,13 @@ export const ProjectCard = ({
             className="project-image-bg"
             src={bgImageUrl}
             alt="Project Background"
+            loading="lazy"
           />
         )}
 
         {imgUrl && (
           <div className="project-image-wrapper">
-           <img className="project-image" src={imgUrl} alt={title} />
+           <img className="project-image" src={imgUrl} alt={title} loading="lazy" />
           </div>
         )}
 
@@ -144,7 +145,7 @@ export const ProjectCard = ({
         <div className="project-screenshots-container">
           {images.map((url, index) => (
             <div key={index} className="screenshot-wrapper">
-              <img key={index} className="project-screenshot" src={url} alt={`${title} Screenshot ${index + 1}`} />
+              <img key={index} className="project-screenshot" src={url} alt={`${title} Screenshot ${index + 1}`} loading="lazy" />
             </div>
           ))}
         </div>

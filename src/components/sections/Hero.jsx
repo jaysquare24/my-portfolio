@@ -7,6 +7,7 @@ export const Hero = () => {
         initial={{ opacity:0, scale:0.2, y:40}}
         animate={{ opacity:1, scale:1, y:0}}
         transition={{duration: 1.5, ease: "easeOut"}}
+        loading="lazy"
       />
       <motion.h2 
         initial={{ opacity:0, y:40 }} 

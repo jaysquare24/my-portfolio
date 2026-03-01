@@ -603,7 +603,7 @@ li span{
 }
 
 .service-card-wrapper {
-  height: 400px;
+  height: 100%;
   display: flex;
   justify-content: center; 
   align-items: center;     
@@ -618,6 +618,7 @@ li span{
   background: #2b2942e2;
   color: #fff;
   border: 1px solid #3E3F46;
+  margin: auto;
   
 }
 
@@ -841,9 +842,7 @@ body::before {
   margin: auto;
   height: auto;
   margin-top: 20px;
-  margin-bottom: 10px;
-  aspect-ratio: 16 / 9;   
-  overflow: hidden;
+  margin-bottom: 10px;  
   
 }
 
@@ -1272,7 +1271,8 @@ body::before {
     order: 1;
   }
 
-  #project-details .project-image-container{
+  .project-details-container .project-image-container{
+    width: 100%;
     margin-top: 40px;
   }
 
@@ -1286,8 +1286,6 @@ body::before {
 
   .features-container, .enhancement-container{
     flex-direction: column;
-    border-top: 1px solid red;
-   
     width: 100%;
   }
   .enhancement-container{
