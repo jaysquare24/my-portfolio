@@ -67,7 +67,7 @@ export const Services = () => {
             What I do
           </motion.p>
         </div>
-        <div>
+        <div className="service-card-wrapper">
           <AnimatePresence mode="wait">
             <motion.div key={activeIndex}>
               <ServiceCard {...services[activeIndex]} />

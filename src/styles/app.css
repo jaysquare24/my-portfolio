@@ -504,6 +504,7 @@ li span{
 .services-section {
   position: relative;
   padding: 3rem 0 0 0 ;
+ 
 }
 
 #services-container{
@@ -550,6 +551,7 @@ li span{
   top: 0;
   height: 100vh;
   padding-top: 40px;
+
   
 }
 
@@ -600,6 +602,14 @@ li span{
   padding: 16px 0;
 }
 
+.service-card-wrapper {
+  height: 400px;
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  
+}
+
 .service-card {
   position: relative;
   justify-self: center;
@@ -608,7 +618,6 @@ li span{
   background: #2b2942e2;
   color: #fff;
   border: 1px solid #3E3F46;
-  margin-top: 70px;
   
 }
 
@@ -913,41 +922,17 @@ body::before {
 }
 
 .project-links a{
-  background-color: #907CFA;
   padding: 11px 20px;
-  border: none;
-  cursor: pointer;
-  transform: skewX(-10deg);
-  z-index: 1;
-  width: 185px;
-  font-family: 'Geist Mono', monospace;
+  cursor: pointer; 
   text-align: center;  
 }
 
-.project-links a:nth-child(2){
-  background-color: #3E3F46;
-}
+
 
 .project-links a span{
   display: inline-block;
   transform: skewX(10deg);
 }
-
-.project-links a::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: transparent;
-  border-right: 1px solid #907CFA;
-  border-bottom: 1px solid #907CFA;
-  transform: translate(6px, 6px);
-  z-index: -1;
-}
-
-.project-links a:nth-child(2)::after{
-  border-right: 1px solid #3E3F46;
-  border-bottom: 1px solid #3E3F46;
-}  
 
 .features-enhancement-wrapper{
   margin-top: 90px!important;
@@ -1282,12 +1267,35 @@ body::before {
     flex-direction: column;
   }
 
+  .project-details-content{
+    width: 100%;
+    order: 1;
+  }
+
   #project-details .project-image-container{
     margin-top: 40px;
   }
 
+  .features-enhancement-wrapper{
+    border-top: 1px solid #ffffff45;
+    margin-top: 45px!important;
+    padding-top: 40px;
+  }
+
+ 
+
   .features-container, .enhancement-container{
     flex-direction: column;
+    border-top: 1px solid red;
+   
+    width: 100%;
+  }
+  .enhancement-container{
+    border-top: 1px solid #ffffff45;
+    border-bottom: 1px solid #ffffff45;
+    margin: 45px 0;
+    padding: 45px 0;
+  
   }
 
   .features-container .aside-image-container{
@@ -1304,10 +1312,11 @@ body::before {
 
   .project-screenshots-container{
     flex-direction: column;
+    margin-top: 0px;
   }
 
   .other-project-container .project-image-container{
-    width: 200px;
+    width: 220px;
   }
 
   .other-project-container {
@@ -1443,6 +1452,38 @@ body::before {
 
   .item2 p:last-child{
     line-height: 100px;
+  }
+
+  .project-links a{
+    width: 155px; 
+  }
+}
+
+@media screen and (max-width:440px){
+
+  .other-projects-wrapper .header{
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 0;
+
+  }
+
+ .other-project-container .project-image-container {
+    margin-top: 0!important;
+  }
+
+  .other-project-container .project-image-container{
+    width: 170px;
+  }
+  
+  .nav-buttons{
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .goBack-btn{
+    width: 155px;
   }
 }
 

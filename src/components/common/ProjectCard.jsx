@@ -90,6 +90,7 @@ export const ProjectCard = ({
                   href={link.url}
                   target="_blank"
                   rel="noopener noreferrer"
+                  className="btn"
                 >
                  <span>{link.name}</span>
                 </a>
@@ -100,9 +101,9 @@ export const ProjectCard = ({
         </div>
       )}
     </div>
-
+   
     {features.length > 0 && (
-      <div className="features-enhancement-wrapper container">
+      <div className="features-enhancement-wrapper">
         <div className="features-container">
           <div className="features">
             <h3 className="project-features-title feature-enhancement-header"><span>Features</span></h3>
