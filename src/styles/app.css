@@ -603,10 +603,12 @@ li span{
 }
 
 .service-card-wrapper {
-  height: 100%;
+  height: auto;
   display: flex;
   justify-content: center; 
-  align-items: center;     
+  align-items: center;   
+  margin: auto;
+  margin-top: 60px;
   
 }
 
