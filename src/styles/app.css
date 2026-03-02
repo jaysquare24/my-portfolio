@@ -515,7 +515,7 @@ li span{
   position:absolute;
   inset: 0; 
   overflow: hidden;
-  z-index: 0;
+  z-index: -1;
   top: 57%
 }
 .service-track{
@@ -1461,12 +1461,29 @@ body::before {
 
 @media screen and (max-width:440px){
 
+
+  .service-card-wrapper {
+    
+    align-items: flex-start;   
+    margin-top: 40px;
+  
+  }
+
+  .services-bg{
+    position: relative;
+    top: 0;
+    margin-top: 40px;
+
+  }
+
   .other-projects-wrapper .header{
     flex-direction: column;
     align-items: flex-start;
     margin-bottom: 0;
 
   }
+
+
 
  .other-project-container .project-image-container {
     margin-top: 0!important;

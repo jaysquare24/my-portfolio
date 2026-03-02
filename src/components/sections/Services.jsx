@@ -40,22 +40,7 @@ export const Services = () => {
 
       <div className="container sticky-wrapper" id="services-container">
 
-        <div className="services-bg">
-          <div className="  service-track">
-            {services.map((service, i) => (
-              <div key={i} className="service-bg-item-container">
-              
-                <p className="service-bg-text">{service.title}</p>
-                <img
-                  src="/resources/style-icon1.svg"
-                  alt=""
-                  className="service-bg-icon"
-                />
-              </div>
-              
-            ))}
-          </div>
-        </div>
+        
         <div className="services-header">
           <p className="services-title" ><span>Services</span></p>
           <motion.p 
@@ -73,6 +58,22 @@ export const Services = () => {
               <ServiceCard {...services[activeIndex]} />
             </motion.div>
           </AnimatePresence>
+        </div>
+        <div className="services-bg">
+          <div className="  service-track">
+            {services.map((service, i) => (
+              <div key={i} className="service-bg-item-container">
+              
+                <p className="service-bg-text">{service.title}</p>
+                <img
+                  src="/resources/style-icon1.svg"
+                  alt=""
+                  className="service-bg-icon"
+                />
+              </div>
+              
+            ))}
+          </div>
         </div>
       </div>
     </section>
