@@ -516,7 +516,8 @@ li span{
   inset: 0; 
   overflow: hidden;
   z-index: 0;
-  top: 55%
+  top: 57%;
+  
 }
 .service-track{
   display: flex;
@@ -550,14 +551,15 @@ li span{
   position: sticky;
   top: 0;
   height: 100vh;
-  padding-top: 40px;
-
-  
+  display: flex;
+  flex-direction: column;
 }
 
 .services-header{
+  flex-shrink: 0;
   width: 897px;
   margin: auto;
+  margin-top: 40px!important;
 }
 
 .services-title {
@@ -602,12 +604,11 @@ li span{
 }
 
 .service-card-wrapper {
-  height: 80%;
+  flex: 1; /* takes remaining space */
   display: flex;
-  justify-content: center; 
-  align-items: center;   
+  justify-content: center;
+  align-items: center;
   margin: auto;
-  
 }
 
 .service-card {
