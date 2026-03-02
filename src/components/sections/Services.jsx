@@ -33,7 +33,7 @@ export const Services = () => {
   return (
     <section
       ref={sectionRef}
-      style={{ height: `${services.length * 100}vh` }}
+      style={{ height: `${services.length * 100}dvh` }}
       id="services"
       className="services-section"
     >

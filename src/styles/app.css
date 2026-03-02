@@ -516,8 +516,7 @@ li span{
   inset: 0; 
   overflow: hidden;
   z-index: 0;
-  top: 57%;
-  
+  top: 57%
 }
 .service-track{
   display: flex;
@@ -550,19 +549,20 @@ li span{
 .sticky-wrapper {
   position: sticky;
   top: 0;
-  height: 100vh;
+  height: 100vh;   
+  height: 100dvh;  
   display: flex;
   flex-direction: column;
 }
 
 .services-header{
-  flex-shrink: 0;
   width: 897px;
   margin: auto;
   margin-top: 40px!important;
 }
 
 .services-title {
+
   display: flex;
   font-size: 16px;
   font-family: 'Geist Mono', sans-serif;
@@ -604,11 +604,12 @@ li span{
 }
 
 .service-card-wrapper {
-  flex: 1; /* takes remaining space */
+  flex: 1;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: center; 
+  align-items: center;   
   margin: auto;
+  
 }
 
 .service-card {
