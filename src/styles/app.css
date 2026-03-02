@@ -1464,14 +1464,15 @@ body::before {
 
   .service-card-wrapper {
     align-items: flex-start;   
-    margin-top: 50px;
+    margin-top: 40px;
+    border: 1px solid;
    
   }
 
   .services-bg{
     position: relative;
     top: 0;
-    margin-top: 50px;
+    border: 1px solid red;
   }
 
   .other-projects-wrapper .header{
