@@ -516,7 +516,7 @@ li span{
   inset: 0; 
   overflow: hidden;
   z-index: -1;
-  top: 60%;
+  top: 50%;
 }
 .service-track{
   display: flex;
@@ -549,16 +549,13 @@ li span{
 .sticky-wrapper {
   position: sticky;
   top: 0;
-  height: 100vh;   
-  height: 100dvh;  
-  display: flex;
-  flex-direction: column;
+  height: 100vh; 
+  padding-top: 40px;  
 }
 
 .services-header{
   width: 897px;
   margin: auto;
-  margin-top: 40px!important;
 }
 
 .services-title {
@@ -609,6 +606,7 @@ li span{
   justify-content: center; 
   align-items: center;   
   margin: auto;
+  margin-top: 60px;
   
 }
 
@@ -621,6 +619,7 @@ li span{
   color: #fff;
   border: 1px solid #3E3F46;
   margin: auto;
+ 
   
 }
 
@@ -1465,14 +1464,14 @@ body::before {
   .service-card-wrapper {
     align-items: flex-start;   
     margin-top: 40px;
-    border: 1px solid;
+    
    
   }
 
   .services-bg{
     position: relative;
     top: 0;
-    border: 1px solid red;
+    margin-top: 40px;
   }
 
   .other-projects-wrapper .header{
