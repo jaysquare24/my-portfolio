@@ -549,7 +549,7 @@ li span{
 .sticky-wrapper {
   position: sticky;
   top: 0;
-  height: auto;
+  height: 100vh;
   padding-top: 40px;
 
   
@@ -561,7 +561,6 @@ li span{
 }
 
 .services-title {
-
   display: flex;
   font-size: 16px;
   font-family: 'Geist Mono', sans-serif;
@@ -603,12 +602,11 @@ li span{
 }
 
 .service-card-wrapper {
-  height: auto;
+  height: 80%;
   display: flex;
   justify-content: center; 
   align-items: center;   
   margin: auto;
-  margin-top: 60px;
   
 }
 
