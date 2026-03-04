@@ -1,8 +1,10 @@
 import { projects } from "../../data/projects";
 import { useParams } from "react-router-dom";
-import { ProjectCard } from "../common/ProjectCard";
+import { ProjectCard } from "../../components/common/ProjectCard";
 import { useNavigate } from "react-router-dom";
-import { OtherProjects } from "../common/OtherProjects";
+import { Features } from "./sections/ProjectFeatures";
+import { ProjectImages } from "./sections/ProjectImages";
+import { OtherProjects } from "./sections/OtherProjects";
 
 export const ProjectDetails = () => {
     const navigate = useNavigate();
@@ -15,10 +17,14 @@ export const ProjectDetails = () => {
     }
 
     return (
-        <section id="project-details" className="project-details">
+        <div id="project-details" className="project-details">
             <div className="project-details-container container">
                 {project? <ProjectCard {...project} />:<div>Project not found</div>}
             </div>
+
+            {project && <Features features={project.features} futureEnhancement={project.futureEnhancement} imagesUrl={project.imagesUrl} title={project.title} />}
+            
+            {project && <ProjectImages imagesUrl={project.imagesUrl} title={project.title} />}
 
             <OtherProjects projects={projects.filter(p => p.slug !== slug)} />  
              
@@ -27,6 +33,6 @@ export const ProjectDetails = () => {
 
            
 
-        </section>
+        </div>
     );
 }

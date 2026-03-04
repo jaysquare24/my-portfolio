@@ -1,4 +1,4 @@
-import { skillIcons } from "../../data/skillIcons";
+import { skillIcons } from "../../../data/skillIcons";
 import { motion } from "framer-motion"; 
 
 const duplicateIcons = [...skillIcons, ...skillIcons, ...skillIcons];

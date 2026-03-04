@@ -1,5 +1,5 @@
-import { projects } from "../../data/projects";
-import { ProjectCard } from "../common/ProjectCard"; 
+import { projects } from "../../../data/projects";
+import { ProjectCard } from "../../../components/common/ProjectCard"; 
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 

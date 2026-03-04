@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
-import { ProjectCard } from "./ProjectCard";
+import { ProjectCard } from "../../../components/common/ProjectCard";
 
 export const OtherProjects = ({ projects }) => {
   const [index, setIndex] = useState(0);
@@ -85,7 +85,7 @@ export const OtherProjects = ({ projects }) => {
     };
 
   return (
-    <div className="other-projects-wrapper container">
+    <section className="other-projects-wrapper container">
       <div className="header">
         <h2>Other Projects</h2>
 
@@ -124,6 +124,6 @@ export const OtherProjects = ({ projects }) => {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };

@@ -6,8 +6,8 @@ import {
   useMotionValueEvent,
   AnimatePresence,
 } from "framer-motion";
-import { services } from "../../data/services";
-import { ServiceCard } from "../common/ServiceCard";
+import { services } from "../../../data/services";
+import { ServiceCard } from "../../../components/common/ServiceCard";
 
 export const Services = () => {
   const sectionRef = useRef(null);
