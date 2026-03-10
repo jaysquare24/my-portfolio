@@ -521,7 +521,7 @@ li span{
 .service-track{
   display: flex;
   width: max-content;
-  animation: scroll 40s linear infinite;
+  animation: scroll 25s linear infinite;
   will-change: transform;
   gap: 30px;
 }
@@ -1083,8 +1083,9 @@ body::before {
 
 .goBack-btn{  
   display: block;
-  margin: auto;
-  margin-top: 50px;
+  margin: 30px auto 30px;
+  
+
 }
 
 /*Hover*/
@@ -1472,6 +1473,14 @@ body::before {
 }
 
 @media screen and (max-width:440px){
+
+  .hero-section::before{
+    display: none;
+  }
+
+  .hero-section::after{
+    display: none;
+  }
 
 
   .service-card-wrapper {
