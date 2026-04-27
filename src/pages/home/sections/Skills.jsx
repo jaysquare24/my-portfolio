@@ -41,7 +41,7 @@ export const Skills = () => {
           >
             <h3 className="skill-card-header"><span>Core Technologies</span></h3>
             <ul>
-              <li><span></span><p>HTML, CSS,JavaScript (ES6+)</p></li>
+              <li><span></span><p>HTML, CSS,JavaScript (ES6+), Tailwind CSS</p></li>
               <li><span></span><p>React.js, Redux, Vite</p></li>
               <li><span></span><p>Resful APIs and Data Integration</p></li>
               <li><span></span><p>Responsive and Adaptive Design</p></li>

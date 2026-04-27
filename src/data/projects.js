@@ -273,4 +273,64 @@ export const projects = [
     slug: 'chuks-meal'
   },
 
+  {
+  id: 8,
+  title: "TalentFlow (LMS)",
+  description: "TalentFlow is a collaborative Learning Management System (LMS) being developed as a team-based internship project at Trueminds Innovations Limited. The platform is designed to simulate a real-world learning system, where users can learn different skills (Frontend, Backend, UI/UX, Product Management, and Graphic Design). The frontend focuses on modular architecture using a feature-based structure, API integration, and state management to deliver a seamless learning experience.",
+  
+  stack: [
+    "JavaScript",
+    "React",
+    "Redux Toolkit",
+    "React Router",
+    "Vite",
+    "Axios",
+    "Tailwind CSS",
+    "Git",
+    "GitHub",
+    "Vercel"
+  ],
+
+  links: [
+    { name: "GITHUB", url: "https://github.com/zackypee/Trueminds-LMS-Teamhotel" },
+    { name: "LIVE LINK", url: "https://trueminds-lms-teamhotel-tqmd.vercel.app/" }
+  ],
+
+  imgUrl: "/resources/lms1.png",
+  bgImageUrl: "/resources/project-card-bg4.avif",
+
+  features: [
+    "Feature-based frontend architecture for scalability",
+    "Role-based authentication system (planned/in progress)",
+    "Protected routes for secure navigation",
+    "Dashboard with user learning overview",
+    "Learning module for course and lesson access",
+    "API integration using Axios",
+    "Reusable component system for UI consistency",
+    "Collaborative Git workflow with feature branching",
+    "Team-based Agile development structure"
+  ],
+
+  futureEnhancement: [
+    "Interactive coding IDE for in-platform practice",
+    "Real-time collaboration tools (chat/discussion)",
+    "Advanced analytics dashboard for learning progress",
+    "AI-powered learning recommendations",
+    "Video conferencing integration for mentors",
+    "Full backend integration with role-based access control",
+    "Testing (unit + integration tests)",
+  ],
+
+  imagesUrl: [
+    "/resources/lms1.png",
+    "/resources/lms2.png",
+    "/resources/lms3.png",
+    "/resources/lms4.png",
+    "/resources/lms5.png",
+   
+  ],
+
+  slug: "talentflow-lms"
+}
+
 ];
