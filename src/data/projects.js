@@ -233,7 +233,7 @@ export const projects = [
   {
     id: 7,
     title: "Chuks Kitchen",
-    description: "Chuks Kitchen is a modern, responsive Food Ordering and Customer Management System UI that simulates a real-world restaurant ordering experience. Developed as an individual internship project at Trueminds Innovations Limited, the project involved converting a provided Figma design into a fully functional web interface, with a strong focus on clean UI implementation, scalable component architecture, and smooth user experience.",
+    description: "Chuks Kitchen is a modern, responsive Food Ordering and Customer Management System UI that simulates a real-world restaurant ordering experience. Developed as an individual internship project at Trueminds Innovations Limited, the project involved converting a provided Figma design into a fully functional web interface, with a strong focus on clean UI implementation, scalable component architecture, and smooth user experience. The project received a perfect performance rating of 10/10, with commendation for attention to detail, code structure, and overall execution quality.",
     stack: ["Javascript","React", "CSS", "Github", "Git", "Vite","Netlify","React Router"],
     links: [
       {name:'GITHUB', url: 'https://github.com/jaysquare24/Trueminds-Innovations-ltd-Intern-Individual-Project'},
@@ -276,8 +276,7 @@ export const projects = [
   {
   id: 8,
   title: "TalentFlow (LMS)",
-  description: "TalentFlow is a collaborative Learning Management System (LMS) being developed as a team-based internship project at Trueminds Innovations Limited. The platform is designed to simulate a real-world learning system, where users can learn different skills (Frontend, Backend, UI/UX, Product Management, and Graphic Design). The frontend focuses on modular architecture using a feature-based structure, API integration, and state management to deliver a seamless learning experience.",
-  
+  description: "TalentFlow is a collaborative Learning Management System (LMS) being developed as a team-based internship project at Trueminds Innovations Limited. The platform is designed to simulate a real-world learning system, where users can learn different skills (Frontend, Backend, UI/UX, Product Management, and Graphic Design). The frontend focuses on modular architecture using a feature-based structure, API integration, and state management to deliver a seamless learning experience. I received a performance rating of 97/100 on this project, with recognition as a top contributor—overseeing API integration across the system, reviewing implementations, supporting task delegation, and contributing to workflow optimization and UI decisions.",
   stack: [
     "JavaScript",
     "React",
@@ -331,6 +330,69 @@ export const projects = [
   ],
 
   slug: "talentflow-lms"
+},
+
+{
+  id: 9,
+  title: "Store Metrics (Admin Dashboard)",
+
+  description: "Store Metrics is a modern, responsive Admin Dashboard that simulates real-world e-commerce management. It provides insights into products, users, and cart activity using data from FakeStore API. The project focuses on scalable frontend architecture, reusable components, and clean state management to deliver a smooth and intuitive admin experience.",
+
+  stack: [
+    "JavaScript",
+    "React",
+    "React Router",
+    "Vite",
+    "Context API",
+    "Custom Hooks",
+    "CSS",
+    "Git",
+    "GitHub",
+    "Netlify"
+  ],
+
+  links: [
+    { name: "GITHUB", url: "https://github.com/jaysquare24/Admin_dashboard.git" },
+    { name: "LIVE LINK", url: "https://storemetrics.netlify.app" }
+  ],
+
+  imgUrl: "/resources/storemetrics1.png",
+  bgImageUrl: "/resources/project-card-bg2.avif",
+
+  features: [
+    "Dashboard with key metrics and statistics overview",
+    "Product management system (view, add, edit, delete)",
+    "User management with activate/deactivate functionality",
+    "Cart interface with detailed product breakdown and totals",
+    "Dynamic search and filtering across products",
+    "Pagination system for handling large datasets",
+    "Modal-based interactions for editing and viewing details",
+    "Custom hooks for data fetching and state handling",
+    "Global state management using Context API",
+    "Responsive design optimized for desktop and mobile",
+    "Loading states and error handling UI"
+  ],
+
+  futureEnhancement: [
+    "Integration with a real backend for persistent data",
+    "Authentication and role-based access control",
+    "Advanced analytics with charts and data visualization",
+    "Toast notification system for better user feedback",
+    "Dark mode support",
+    "Unit and integration testing",
+    "Performance optimization and caching"
+  ],
+
+  imagesUrl: [
+    "/resources/storemetrics1.png",
+    "/resources/storemetrics2.png",
+    "/resources/storemetrics3.png",
+    "/resources/storemetrics4.png",
+    "/resources/storemetrics5.png",
+    "/resources/storemetrics6.png"
+  ],
+
+  slug: "store-metrics-admin-dashboard"
 }
 
 ];
