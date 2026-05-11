@@ -39,7 +39,7 @@ export const About = () => {
         viewport={{once:true}}
         transition={{ duration: 1.5, delay:1, ease: "easeOut" }}
         >
-          <a className="btn "  href="./resources/Olajide-Jamiu-resumee.pdf" target="_blank" rel="noopener noreferrer"><span>My Resume</span></a>
+          <a className="btn "  href="./resources/Jamiu_Olajide_Resume.pdf" target="_blank" rel="noopener noreferrer"><span>My Resume</span></a>
         </motion.div>
       </div>
     </section>
