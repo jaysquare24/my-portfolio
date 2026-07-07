@@ -213,7 +213,7 @@ header{
 }
 
 .about-me p{
- font-family: 'Geist Mono', monospace;
+  font-family: 'Geist Mono', monospace;
   font-size: 16px;
   line-height: 20px;
   letter-spacing: -0.2px;
@@ -316,7 +316,8 @@ header{
   }
 }
 
-.skills-cards{
+.skills-cards, 
+.experience-card-container{
   position: relative;
   z-index: 1;
   display: flex;
@@ -342,6 +343,7 @@ header{
 }
 
 .skill-card-header,
+.experience-card-header,
 .feature-enhancement-header{
   position: relative;
   width:fit-content;
@@ -358,6 +360,7 @@ header{
 }
 
 .skill-card-header::before,
+.experience-card-header::before,
 .feature-enhancement-header::before{
   position: absolute;
   content: '';
@@ -381,6 +384,7 @@ header{
 }
 
 .skills-card li,
+.experience-card li,
 .features-enhancement-wrapper li{
   display: flex;
   font-family: 'Geist Mono', monospace;
@@ -400,6 +404,150 @@ li span{
   height: 10px;
   background-color: #c6c6c681;
   margin-right: 10px; 
+}
+
+
+/*Experiences*/
+
+.experience-card-container{
+  flex-direction: column;
+  gap:60px;
+
+}
+
+.portfolio-icon{
+  width: 28px;
+}
+
+.experience-card{
+  width: 100%;
+  border: 1px solid #FFFFFF40;
+  padding: 15px;
+  background-color: #2b2942e2;
+  max-width: 600px;
+  z-index: 3;
+  margin: auto;
+}
+
+
+.experience-card h3{
+  font-size: 16px;
+  line-height: 24px;
+  font-family: 'Michroma', sans-serif;
+  
+}
+
+.experience-card ul{
+ 
+  margin-left: 15px;
+
+}
+.company{
+  color: #907CFA;
+  font-size: 13px;
+  font-family: 'Michroma', sans-serif;
+  letter-spacing: 0.6px;
+}
+
+.duration{
+  font-size: 12px;
+  font-weight:normal ;
+  font-family: 'Geist Mono', sans-serif;
+}
+
+.experience-header{
+  position: relative;
+  margin-bottom: 25px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #747272;
+ 
+}
+
+.experience-icon-container{
+  display: flex;
+  align-items:flex-start;
+  gap:20px;
+}
+
+
+
+.work-mode{
+  width: fit-content;
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  background-color: #917cfa21 ;
+  color: #907CFA;
+  padding: 5px 10px;
+  font-size: 12px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  align-self: center;
+  border-radius: 50px;
+  position: absolute;
+  right: 5px;
+  top:20px
+}
+
+.achievements-section{
+  margin-top: 26px;
+}
+
+.achievements-container{
+  display: flex;
+  gap: 4px;
+  
+}
+
+.achievement{
+  width: 180px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  border: 1px solid #826bf678;
+  padding: 3px;
+
+}
+
+.achievement-icon-container{
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  background-color: #917cfa21 ;
+  border: 1px solid #826bf678;
+  padding: 5px;
+  border-radius: 50%;
+   margin: auto;
+}
+
+.achievement p{
+  display: flex;
+  font-size: 10px;
+  align-self: center;
+  text-align: center;
+ 
+  
+}
+
+.achievement p:last-of-type{
+  line-height: 17px;
+  opacity: 70%;
+}
+
+.achievement .grade{
+  font-size: 14px;
+  font-weight: 600;
+  
+}
+
+.achievement-icon{
+  width: 20px;
+  height: 20px;
+ 
+}
+
+.experience-card-container .shape2{
+  bottom:52%;
 }
 
 /*Projects*/
@@ -1425,6 +1573,21 @@ body::before {
     width: 100%;
   }
 
+  
+
+  .work-mode{
+    position: relative;
+    top: 4px;
+    right: unset;
+    left: 45px;
+    
+    
+  }
+
+  .work-mode img{
+    width: 16px;
+  }
+
   .header-section p{
     margin-top: 30px;
     width: 100%; 
@@ -1480,6 +1643,14 @@ body::before {
 
   .hero-section::after{
     display: none;
+  }
+
+  .experience-card h3{
+    font-size: 3.5cqw;
+  }
+  
+  .company{
+    font-size: 2.8cqw;
   }
 
 

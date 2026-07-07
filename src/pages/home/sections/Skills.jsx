@@ -36,9 +36,7 @@ export const Skills = () => {
           transition={{ duration: 1.5, delay:0.7, ease: "easeOut" }}
         >
           <img className="decorative-shape shape2" src="/resources/style-icon1.svg" alt="Decorative Shape 2" />
-          <div className="skills-card"
-
-          >
+          <div className="skills-card">
             <h3 className="skill-card-header"><span>Core Technologies</span></h3>
             <ul>
               <li><span></span><p>HTML, CSS,JavaScript (ES6+), Tailwind CSS</p></li>

@@ -4,6 +4,7 @@ import { Skills } from "./sections/Skills";
 import { Projects } from "./sections/Projects";
 import { Services } from "./sections/Services";
 import { Contacts } from "./sections/Contacts";
+import { Experiences } from "./sections/Experiences";
 
 
 export const Home = () => {
@@ -12,8 +13,9 @@ export const Home = () => {
             <Hero />
             <About />
             <Skills />
+            <Experiences />
             <Projects />
-             <Services />
+            <Services />
             <Contacts />
         </div>
     )
