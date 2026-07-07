@@ -9,7 +9,6 @@ export const experiences = [
         contributions : [
             "Developed responsive user interfaces using React, Next.js, and Tailwind CSS.",
             "Built and maintained the complete user onboarding experience.",
-            "Reviewed frontend implementations to maintain code consistency",
             "Improved consistency across the application through reusable design patterns.",
             "Implemented dynamic routing and reusable layouts to support multiple user roles.",
             "Collaborated closely with designers and backend engineers."
