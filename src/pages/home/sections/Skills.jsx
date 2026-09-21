@@ -38,25 +38,29 @@ export const Skills = () => {
           <img className="decorative-shape shape2" src="/resources/style-icon1.svg" alt="Decorative Shape 2" />
           <div className="skills-card">
             <h3 className="skill-card-header"><span>Core Technologies</span></h3>
-            <ul>
-              <li><span></span><p>HTML, CSS,JavaScript (ES6+), Tailwind CSS</p></li>
-              <li><span></span><p>React.js, Redux, Vite</p></li>
-              <li><span></span><p>Resful APIs and Data Integration</p></li>
-              <li><span></span><p>Responsive and Adaptive Design</p></li>
-              <li><span></span><p>Version Control with Git and GitHub</p></li>
+
+            <ul> 
+              <li><span></span><p>HTML, CSS, JavaScript (ES6+), Tailwind CSS</p></li> 
+              <li><span></span><p>React.js, Next.js, Redux Toolkit, Vite</p></li> 
+              <li><span></span><p>Java, Spring Boot, Spring Data JPA</p></li> 
+              <li><span></span><p>RESTful APIs and Backend Development</p></li> 
+              <li><span></span><p>MySQL and Database Management</p></li> 
+              <li><span></span><p>Git and GitHub</p></li> 
+              <li><span></span><p>Postman, PuTTY, and FileZilla</p></li>
             </ul>
+
           </div>
 
           <div className="skills-card">
             <h3 className="skill-card-header"><span>Soft / Domain Skills</span></h3>
-            <ul>
-              <li><span></span><p>UI/UX collaboration and design systems</p></li>
-              <li><span></span><p>Agile development practices</p></li>
-              <li><span></span><p>Testing and debugging</p></li>
-              <li><span></span><p>Communication and teamwork</p></li>
-              <li><span></span><p>Time management and organization</p></li>
-              <li><span></span><p>Web performance optimization</p></li>
-              <li><span></span><p>Accessibility (WCAG compliance)</p></li>
+            <ul> 
+              <li><span></span><p>API Integration and Testing with Postman</p></li>
+              <li><span></span><p>Payment and Financial System Integrations</p></li>
+              <li><span></span><p>ISO 20022 and NIBSS/NPS Messaging</p></li> 
+              <li><span></span><p>Database Design, Queries, and Transaction Management</p></li> 
+              <li><span></span><p>Debugging and Problem Solving</p></li> 
+              <li><span></span><p>Agile Development and Team Collaboration</p></li>
+              <li><span></span><p>UI/UX Collaboration and Responsive Design</p></li>
             </ul>
           </div>
         </motion.div>

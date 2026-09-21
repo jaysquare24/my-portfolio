@@ -14,14 +14,14 @@ export const Hero = () => {
         animate={{ opacity:1, y:0 }} 
         transition={{duration: 1.5, delay: 0.8, ease: "easeOut"}}
       >
-        Building modern, responsive, and impactful web experiences.
+        Building modern web experiences and reliable backend systems.
       </motion.h2>
       <motion.p
         initial={{opacity:0, y:40}}
         animate={{opacity:0.7, y:0}}
         transition={{duration: 1.5, delay: 1.4, ease: "easeOut"}}
       >
-        I’m J.O Olajide, a front-end developer focused on crafting fast, accessible, and scalable digital products that deliver real results.
+        I’m J.O Olajide, a software developer building modern web applications with React, Next.js, Java, and Spring Boot — from responsive interfaces to scalable backend systems and financial integrations.
       </motion.p>
         
       <motion.p className="openToWork-tag mobile" 

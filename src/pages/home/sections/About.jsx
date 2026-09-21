@@ -19,7 +19,27 @@ export const About = () => {
            viewport={{once:true}}
            transition={{ duration: 1.5, delay:0.5, ease: "easeOut" }}
           >
-           <p>I’m a front-end developer focused on building clean, efficient, and user-centered web interfaces that balance strong functionality with thoughtful design. I have completed several high-quality projects that reflect my commitment to innovation, precision, and visual appeal. Beyond coding, I actively explore new technologies, engage with the developer community, and continuously improve through learning and reading. I’m also passionate about chess, which sharpens my strategic thinking and problem-solving skills, and I’m always eager to collaborate on meaningful projects that align with clear goals and strong brand identity.</p>
+          
+            <p>
+              I’m a software developer focused on building modern, reliable, and
+              user-centered web applications. My experience spans both frontend and
+              backend development, working with technologies such as React, Next.js,
+              Java, and Spring Boot to build responsive interfaces, RESTful APIs, and
+              scalable backend systems.
+
+              I’ve worked on projects ranging from web applications and learning
+              platforms to financial and banking systems, where I’ve gained practical
+              experience with API integration, databases, payment services, and
+              transaction workflows.
+
+              Beyond coding, I’m constantly learning, exploring new technologies, and
+              improving through hands-on projects and collaboration. I enjoy solving
+              problems, understanding how systems work beneath the surface, and turning
+              ideas into practical products. I’m also passionate about chess, which
+              continues to sharpen my strategic thinking and problem-solving approach.
+            </p>
+
+
           </motion.div>
    
           <motion.div

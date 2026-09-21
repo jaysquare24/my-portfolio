@@ -1,61 +1,61 @@
 export const services = [
   {
     id: 1,
-    title: "Responsive & Mobile Friendly Design",
-     items: [
-        "Ensuring websites work perfectly on mobile, tablet, and desktop", 
-        "Cross-browser compatibility (Chrome, Firefox, Safari, Edge)",
-        "Mobile-first design implementation",
+    title: "Web Application Development",
+    items: [
+      "Building responsive and user-friendly web applications",
+      "Developing modern interfaces with React and Next.js",
+      "Creating reusable, maintainable, and scalable components",
     ],
-    
-
   },
+
   {
     id: 2,
-    title: "UI / UX Implementation",
+    title: "Backend & API Development",
     items: [
-        "Pixel-perfect conversion from Figma to code", 
-        "Improving user experience based on usability principles",
-        "Implementing animations, transitions, and micro-interactions",
-        "Accessibility (WCAG, ARIA roles, keyboard navigation)"
-    ],
-  },
-  {
-    id: 3,
-    title: "Performance Optimization",
-    items: [
-        "Image optimization and asset bundling", 
-        "Code splitting and lazy loading",
-        "Improving load time and runtime performance",
-    ],
-  },
-  {
-    id: 4,
-    title: "API Integration",
-    items: [
-        "Connecting front-end apps to RESTFUL API", 
-        "Handling data fetching, loading states, and error states",
-        "Authentication UI (login, signup, token handling)",
+      "Building RESTful APIs with Java and Spring Boot",
+      "Designing backend services for web and business applications",
+      "Implementing data persistence with Spring Data JPA and MySQL",
     ],
   },
 
-   {
-    id: 5,
-    title: "Front End Testing",
+  {
+    id: 3,
+    title: "API & System Integration",
     items: [
-        "Writing unit and component tests", 
-        "UI testing (Jest, React Testing Library)",
-        "Cross-device and browser testing",
+      "Connecting frontend applications with backend APIs",
+      "Integrating third-party services and payment platforms",
+      "Handling authentication, data processing, errors, and API responses",
+    ],
+  },
+
+  {
+    id: 4,
+    title: "UI/UX Implementation",
+    items: [
+      "Converting Figma designs into responsive web interfaces",
+      "Building mobile-first layouts across different screen sizes",
+      "Implementing animations, transitions, and interactive experiences",
+    ],
+  },
+
+  {
+    id: 5,
+    title: "Testing & Debugging",
+    items: [
+      "Writing unit and component tests for frontend applications",
+      "Testing and validating APIs and application workflows",
+      "Tracing and resolving issues across frontend, backend, database, and integrations",
     ],
   },
 
   {
     id: 6,
-    title: "Website Maintenance & Updates",
+    title: "Maintenance & Optimization",
     items: [
-        "Fixing UI bugs and layout issues", 
-        "Updating content and components",
-        "Refactoring old or messy front-end code",
+      "Fixing bugs and improving existing applications",
+      "Refactoring code for better maintainability and reliability",
+      "Improving application performance and overall user experience",
     ],
   },
 ];
