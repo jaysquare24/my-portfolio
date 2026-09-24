@@ -2,20 +2,19 @@ export const experiences = [
 
     {
         id:1,
-        position: "Backend Developer Test",
+        position: "Backend Developer",
         companyName:"Dimension Logic Technology",
         duration: "July 2026 - Present",
         workMode: "Remote",
        contributions: [ 
             "Develop and maintain RESTful APIs using Java and Spring Boot for banking and financial services.", 
             "Implement and integrate banking transaction workflows, including fund transfers, name enquiries, and other services.", 
-            "Work with NIBSS/NPS and ISO 20022 messaging, implementing and debugging payment flows using messages such as pacs.008, pacs.002, pain.013, and others.", 
+            "Work with NIBSS/NPS and ISO 20022 messaging, implementing and debugging payment flows using messages such as pacs.008, pacs.002, and others.", 
             "Integrate third-party payment and bill-payment services, including CoralPay VAS.",
-            "Handle external API responses, failures, and transaction processing.", 
             "Maintain database operations using Spring Data JPA and MySQL, including queries, pagination, transaction management, and data persistence.", 
             "Debug and resolve backend issues by tracing requests across codebase, databases, logs, and external integrations.", 
             "Test and validate APIs and transaction workflows using Postman.",
-            "Collaborate with team members through GitHub and work closely with the frontend team to ensure smooth API integration."
+            "Collaborate with team members and work closely with the frontend team to ensure smooth API integration."
        ]
     },
 
